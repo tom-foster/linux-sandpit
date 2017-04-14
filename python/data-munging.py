@@ -2,7 +2,7 @@
 #tf 14/04/17
 
 #define the data
-student_data = [
+STUDENT_DATA = [
     {'name': 'Bob', 'id': 0, 'scores':[68, 75, 56, 81]},
     {'name': 'Alice', 'id': 1, 'scores': [75, 90, 64, 88]},
     {'name': 'Carol', 'id': 2, 'scores': [59, 74, 71, 68]},
@@ -11,7 +11,7 @@ student_data = [
 
 #define the function
 def process_student_data(data, pass_threshold=60,
-                        merit_threshold=75):
+                         merit_threshold=75):
     """ Perform some basic stats on some student data. """
 
     # for loop
@@ -31,4 +31,4 @@ def process_student_data(data, pass_threshold=60,
             sdata['name'], sdata['id'], sdata['assessment'].upper()))
 
 if __name__ == '__main__':
-    process_student_data(student_data)
+    process_student_data(STUDENT_DATA)
