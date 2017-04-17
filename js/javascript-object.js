@@ -13,6 +13,7 @@ Citizen.prototype = {
     }
 };
 
+// one way of creating a new citizen object using the 'new' keyword.
 var c = new Citizen('Trevor Turky', 'Scotland');
 
 c.printDetails(); //new method 
